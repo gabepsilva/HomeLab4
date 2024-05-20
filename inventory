@@ -1,2 +1,2 @@
 [plex]
-plex.i.psilva.org ansible_host=10.10.0.12
+Plex.i.psilva.org ansible_host=10.10.0.12

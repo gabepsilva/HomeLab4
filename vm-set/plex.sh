@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Works"
+sudo apt-get update
+sudo apt-get install ansible 

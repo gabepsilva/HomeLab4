@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ groups['plex'] }}"
+- hosts: plex
   become: yes
 
   vars:

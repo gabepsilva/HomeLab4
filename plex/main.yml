@@ -21,7 +21,3 @@
 
   roles:
     - role: geerlingguy.docker
-
-  tasks:
-    - name: Run echo command after roles
-      command: echo "Hello, Ansible!!!"

@@ -3,7 +3,7 @@
 # Define variables
 REPO_URL="https://github.com/gabepsilva/HomeLab4"
 BRANCH="Plex_Server"
-BASE_DIR="{$HOME}/.ansible/pull/plex.i.psilva.org"
+BASE_DIR="${HOME}/.ansible/pull/plex.i.psilva.org"
 INVENTORY_PATH="${BASE_DIR}/inventory"
 PLAYBOOK_PATH="${BASE_DIR}/plex/local.yml"
 REQUIREMENTS_PATH="${BASE_DIR}/requirements.yml"

@@ -16,5 +16,5 @@
       command: echo "Hello, Ansible!!!"
 
 
-  #roles:
-  #  - role: geerlingguy.docker
+  roles:
+    - role: geerlingguy.docker

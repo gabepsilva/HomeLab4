@@ -1,5 +1,5 @@
 ---
-- hosts: plex
+- hosts: 10.10.0.12
   become: yes
 
   vars:

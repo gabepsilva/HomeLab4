@@ -2,4 +2,4 @@
 127.0.0.1
 
 [plex]
-Plex.i.psilva.org ansible_host=10.10.0.12
+10.10.0.12

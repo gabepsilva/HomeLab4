@@ -5,6 +5,9 @@
     - name: Install geerlingguy.docker role
       ansible.builtin.command: ansible-galaxy install geerlingguy.docker
 
+    - name: Run echo command before roles
+      command: echo "Hello, Ansible!!!"
+
 - hosts: plex
   become: yes
 
@@ -16,11 +19,9 @@
     docker_restart_handler_state: restarted
     docker_install_compose_plugin: true
 
-
-  tasks:
-    - name: Run echo command
-      command: echo "Hello, Ansible!!!"
-
-
   roles:
     - role: geerlingguy.docker
+
+  tasks:
+    - name: Run echo command after roles
+      command: echo "Hello, Ansible!!!"

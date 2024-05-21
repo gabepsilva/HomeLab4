@@ -14,5 +14,6 @@ git clone -b $BRANCH $REPO_URL $BASE_DIR
 # Install the required roles
 ansible-galaxy install -r $REQUIREMENTS_PATH
 
+sleep 10
 # Run the ansible-pull command
 ansible-pull -U $REPO_URL -C $BRANCH -i $INVENTORY_PATH $PLAYBOOK_PATH

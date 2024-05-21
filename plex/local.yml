@@ -23,4 +23,4 @@
 
 
   roles:
-    - geerlingguy.docker
+    - role: geerlingguy.docker

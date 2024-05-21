@@ -17,4 +17,4 @@
 
 
   roles:
-    - role: geerlingguy.docker
+    - geerlingguy.docker

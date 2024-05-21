@@ -1,13 +1,4 @@
 ---
-- name: Ensure required roles are installed
-  hosts: plex
-  tasks:
-    - name: Install geerlingguy.docker role
-      ansible.builtin.command: ansible-galaxy install geerlingguy.docker
-
-    - name: Run echo command before roles
-      command: echo "Hello, Ansible!!!"
-
 - hosts: plex
   become: yes
 

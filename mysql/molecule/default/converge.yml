@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: true
+
+- name: Include a play after another play
+  ansible.builtin.import_playbook: ../../main.yml

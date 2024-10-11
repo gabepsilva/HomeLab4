@@ -1,0 +1,28 @@
+---
+- name: Install and configure MySQL general purpose DB
+  hosts: mysql
+  become: true
+  remote_user: gabs
+  gather_facts: true
+
+  vars_files:
+    - vault.yml
+
+  roles:
+    - geerlingguy.mysql
+
+  vars:
+    mysql_root_password: "{{ mysql_root_password }}"
+    mysql_databases:
+      - name: automated_tests
+    mysql_users:
+      - name: "readuser"
+        host: "%"
+        column_case_sensitive: true
+        password: "{{ mysql_readuser_password }}"
+        priv: "*.*:SELECT,SHOW VIEW,SHOW DATABASES,EXECUTE"
+      - name: "poweruser"
+        host: "%"
+        column_case_sensitive: true
+        password: "{{ mysql_poweruser_password }}"
+        priv: "*.*:ALL"
